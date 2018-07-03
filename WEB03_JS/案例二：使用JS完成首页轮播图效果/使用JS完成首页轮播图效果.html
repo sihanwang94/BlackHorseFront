@@ -93,7 +93,7 @@
 		</style>
 		<script>
 			function init(){
-				//书写轮图片显示的定时操作
+				//书写轮播图片显示的定时操作，window里面的方法可以省略window
 				setInterval("changeImg()",3000);
 			}
 			
@@ -109,6 +109,7 @@
 			}
 		</script>
 	</head>
+	<!-- 页面加载事件必须要绑定在body的标签这里！！！！ -->
 	<body onload="init()">
 		<div id="father">
 			<!--定时弹出广告图片位置-->
