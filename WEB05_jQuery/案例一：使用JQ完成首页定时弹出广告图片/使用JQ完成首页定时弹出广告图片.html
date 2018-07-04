@@ -102,9 +102,9 @@
 			//2.书写显示广告图片的函数
 			function showAd(){
 				//3.获取广告图片，并让其显示
-				//$("#img2").show(1000);
-				//$("#img2").slideDown(5000);
-				$("#img2").fadeIn(4000);
+				//$("#img2").show(1000);直愣愣的显示出来
+				//$("#img2").slideDown(5000);向下滑动出现
+				$("#img2").fadeIn(4000);//淡入
 				//4.清除显示图片定时操作
 				clearInterval(time);
 				//5.设置隐藏图片的定时操作
@@ -113,9 +113,9 @@
 			
 			function hiddenAd(){
 				//6.获取广告图片，并让其隐藏
-				//$("#img2").hide();
-				//$("#img2").slideUp(5000);
-				$("#img2").fadeOut(6000);
+				//$("#img2").hide();直愣愣消失
+				//$("#img2").slideUp(5000);向上滑动消失
+				$("#img2").fadeOut(6000);//淡出
 				//7.清除隐藏图片的定时操作
 				clearInterval(time);
 			}
