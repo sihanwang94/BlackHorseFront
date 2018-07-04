@@ -9,7 +9,7 @@
 			$(function(){
 				$("#select").click(function(){
 					//获取下面所有的 复选框并将其选中状态设置跟编码的前端 复选框保持一致。
-					//attr方法与JQ的版本有关，在1.8.3及以下有效。
+					//attr方法与JQ的版本有关，在1.8.3及以下有效。prop兼容性更好一些
 					//$("tbody input").attr("checked",this.checked);
 					$("tbody input").prop("checked",this.checked);
 				});
