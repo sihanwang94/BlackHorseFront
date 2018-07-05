@@ -136,7 +136,7 @@
 					},
 					errorElement: "label", //用来创建错误提示信息标签,validate插件默认的就是label
 					success: function(label) { //验证成功后的执行的回调函数
-						//label指向上面那个错误提示信息标签label
+						//label指向上面那个错误提示信息标签label，要保持一致
 						label.text(" ") //清空错误提示消息
 							.addClass("success"); //加上自定义的success类
 					}
@@ -242,6 +242,7 @@
 										<span style="margin-right: 155px;">
 											<em style="color: red;">*</em>&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" value="男"/>男
 											<input type="radio" name="sex" value="女"/>女<em></em>
+											<!--这个是为了错误提示出现在label部分-->
 											<label for="sex" class="error" style="display: none;"></label>
 										</span>
 										
