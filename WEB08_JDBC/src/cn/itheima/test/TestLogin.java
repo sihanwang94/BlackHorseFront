@@ -12,9 +12,7 @@ import org.junit.Test;
 /**
  * 测试sql注入问题
  * 
- * @author Never Say Never
- * @date 2016年7月28日
- * @version V1.0
+ * 
  */
 public class TestLogin {
 
@@ -39,7 +37,7 @@ public class TestLogin {
 		// 1.注册驱动
 		Class.forName("com.mysql.jdbc.Driver");
 		// 2.获取连接
-		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web08", "root", "root");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web08", "root", "89549840");
 		// 3.创建执行sql语句的对象
 		Statement stmt = conn.createStatement();
 		// 4.书写一个sql语句

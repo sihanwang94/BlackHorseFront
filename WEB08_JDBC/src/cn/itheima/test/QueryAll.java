@@ -24,9 +24,9 @@ public class QueryAll {
 			//1.注册驱动
 			Class.forName("com.mysql.jdbc.Driver");
 			//2.获取连接
-			String url ="jdbc:mysql://127.0.0.1:3306/web08?useUnicode=true&characterEncoding=utf8";
+			String url ="jdbc:mysql://127.0.0.1:3306/web08";
 			String username="root";
-			String password="root";
+			String password="89549840";
 			conn = DriverManager.getConnection(url,username,password);
 			//3.获取执行sql语句对象
 			stmt = conn.createStatement();
