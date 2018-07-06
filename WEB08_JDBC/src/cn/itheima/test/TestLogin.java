@@ -19,7 +19,7 @@ public class TestLogin {
 	@Test
 	public void testLogin() {
 		try {
-			login1("zs' or 'zs", "zs");
+			login1("zs' or '1=1", "zs");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -35,9 +35,13 @@ public class TestLogin {
 	 */
 	public void login(String username, String password) throws ClassNotFoundException, SQLException {
 		// 1.注册驱动
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		// 2.获取连接
-		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web08", "root", "89549840");
+//		Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/web08?&useSSL=false&serverTimezone=UTC", "root", "89549840");
+		String url ="jdbc:mysql://127.0.0.1:3306/web08?&useSSL=false&serverTimezone=UTC";
+		String username1="root";
+		String password1="89549840";
+		Connection conn = DriverManager.getConnection(url,username1,password1);
 		// 3.创建执行sql语句的对象
 		Statement stmt = conn.createStatement();
 		// 4.书写一个sql语句
@@ -61,9 +65,13 @@ public class TestLogin {
 
 	public void login1(String username, String password) throws ClassNotFoundException, SQLException {
 		// 1.注册驱动
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		// 2.获取连接
-		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web08", "root", "root");
+//		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web08?&useSSL=false&serverTimezone=UTC", "root", "89549840");
+		String url ="jdbc:mysql://127.0.0.1:3306/web08?&useSSL=false&serverTimezone=UTC";
+		String username1="root";
+		String password1="89549840";
+		Connection conn = DriverManager.getConnection(url,username1,password1);
 		// 3.编写sql语句
 		String sql = "select * from tbl_user where uname=? and upassword=?";
 		// 4.创建预处理对象

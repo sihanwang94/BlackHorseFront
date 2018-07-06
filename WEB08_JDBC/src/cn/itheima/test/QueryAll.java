@@ -22,9 +22,9 @@ public class QueryAll {
 		ResultSet rs = null;
 		try {
 			//1.注册驱动
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			//2.获取连接
-			String url ="jdbc:mysql://127.0.0.1:3306/web08";
+			String url ="jdbc:mysql://127.0.0.1:3306/web08?&useSSL=false&serverTimezone=UTC";
 			String username="root";
 			String password="89549840";
 			conn = DriverManager.getConnection(url,username,password);
