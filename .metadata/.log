@@ -58,3 +58,25 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.oomph.setup.ui 1 0 2018-07-06 16:42:15.269
 !MESSAGE Setup tasks were performed during startup updating 1 preference. See '/Applications/EclipseEE.app/Contents/Eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
+!SESSION 2018-07-10 11:46:10.251 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sihanwang/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sihanwang/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-07-10 11:46:19.800
+!MESSAGE System property http.nonProxyHosts has been set to local„ÄÅ169.254/16|*.local„ÄÅ169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2018-07-10 11:46:39.316
+!MESSAGE Setup tasks were performed during startup updating 1 preference. See '/Applications/EclipseEE.app/Contents/Eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-07-10 13:04:37.683
+!MESSAGE No repository found at http://download.eclipse.org/release/Indigo.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-07-10 14:41:48.201
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2018-07-10 14:45:41.246
+!MESSAGE Several ports (8080, 8009) required by Tomcat v9.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
